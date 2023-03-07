@@ -4,10 +4,137 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=Work+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
 <body>
-    <script src="index.js"></script>
+    <aside>
+        <p>Sign up</p>
+    </aside>
+    <main>
+        <object id="user" type="image/svg+xml" data="img/user_animated.svg"></object>
+        <div class="registration">
+            <h1>New user?</h1>
+            <p>Use the form below to create your account.</p>
+            <form action="index.js">
+                <label class="formEl formEl1" for="firstName">
+                    First Name
+                    <input class="field" type="text" name="firstName" id="firstName" placeholder="Alice">
+                    <span>Поле не заполнено</span>
+                </label>
+                <label class="formEl formEl2" for="lastName">
+                    Last Name
+                    <input class="field" type="text" name="lastName" id="lastName" placeholder="Miller">
+                    <span>Поле не заполнено</span>
+                </label>
+                <label class="formEl formEl3" for="nationality">
+                    Nationality
+                    <select name="nationality" id="nationality">
+                        <option selected value="American">American</option>
+                        <option value="Russian">Russian</option>
+                        <option value="Belarussian">Belarussian</option>
+                        <option value="Polish">Polish</option>
+                    </select>
+                </label>
+                <label class="formEl formEl4" for="e-mail">
+                    E-mail
+                    <input class="field" type="email" name="e-mail" id="e-mail" placeholder="alice.miller@yahoo.com" value="alice.miller@yahoo.com">
+                    <span>Неправильный e-mail</span>
+                    <img src="img/check.svg" alt="check">
+                </label>
+                <div class="dateOfBirth formEl formEl5">
+                    Date of Birth
+                    <div>
+                        <select name="day">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="13">13</option>
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                            <option value="16">16</option>
+                            <option value="17">17</option>
+                            <option value="18">18</option>
+                            <option value="19">19</option>
+                            <option value="20">20</option>
+                            <option value="21">21</option>
+                            <option value="22">22</option>
+                            <option value="23">23</option>
+                            <option value="24">24</option>
+                            <option value="25">25</option>
+                            <option value="26">26</option>
+                            <option value="27">27</option>
+                            <option value="28">28</option>
+                            <option value="29">29</option>
+                            <option value="30">30</option>
+                            <option value="31">31</option>
+                        </select>
+                        <select name="month">
+                            <option value="January">January</option>
+                            <option value="February">February</option>
+                            <option value="March">March</option>
+                            <option value="April">April</option>
+                            <option value="May">May</option>
+                            <option value="June">June</option>
+                            <option value="July">July</option>
+                            <option value="August">August</option>
+                            <option value="September">September</option>
+                            <option value="October">October</option>
+                            <option value="November">November</option>
+                            <option value="December">December</option>
+                        </select>
+                        <select name="year">
+                            <option value="1995">1995</option>
+                            <option value="1996">1996</option>
+                            <option value="1997">1997</option>
+                            <option value="1998">1998</option>
+                            <option value="1998">1999</option>
+                            <option value="1998">2000</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="formEl genderOptions formEl6">
+                    Gender
+                    <div>
+                        <label for="male"><input type="radio" name="gender" id="male" value="male">Male</label>
+                        <label for="female"><input type="radio" name="gender" id="female" value="female" checked>Female</label>
+                    </div>
+                </div>
+                <label class="formEl formEl7" for="password">
+                    Password
+                    <input class="field" type="text" name="password" id="password" value="Password1">
+                    <span></span>
+                </label>
+                <label class="formEl formEl8" for="confirmPassword">
+                    Confirm Password
+                    <input class="field" type="text" name="confirmPassword" id="confirmPassword" value="Password1">
+                    <span></span>
+                </label>
+            </form> 
+        </div>
+        <div class="successRegistration">
+            <h1>Thank You!</h1>
+            <p>you registered!</p>
+        </div>
+        <div>
+            <p>Have an account?
+                <a href="#">Login</a>
+            </p>
+            <button type='submit'>Complete Signup</button>
+        </div>
+    </main>
+    <script defer src="index.js"></script>
 </body>
 </html>

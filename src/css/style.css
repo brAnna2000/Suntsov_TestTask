@@ -79,9 +79,10 @@ form > label, form > div{
     justify-content: space-between;
     position: relative;
     width: 48%;
+    margin-bottom: 16px;
+
     color: var(--grey);
     font-size: 0.75rem;
-    margin-bottom: 16px;
 }
 select{
     appearance: none;
@@ -89,17 +90,19 @@ select{
     background: url('../img/select_arrow.svg') no-repeat right;
 }
 input, select{
-    color: var(--black);
-    font-size: 0.875rem;
     border: none;
     border-bottom: 1px solid var(--smoke);
     background-color: transparent;
+
+    color: var(--black);
+    font-size: 0.875rem;
 }
 label span{
     display: none;
     position: absolute;
     bottom: -15px;
     left: 0;
+
     color: var(--red-font);
 }
 input:not(input[name="gender"]), select:not(select[name="day"], select[name="month"], select[name="year"]){
@@ -136,8 +139,8 @@ label[for="male"] input, label[for="female"] input{
     margin-right: 6px;
 }
 select[name="day"], select[name="month"], select[name="year"]{
-    flex-grow: 1;
     height: 27px;
+    flex-grow: 1;
 }
 main > div:last-of-type{
     display: flex;
@@ -147,10 +150,11 @@ main > div:last-of-type p{
     font-size: 0.8125rem;
 }
 button{
-    background-color: var(--cornflower);
-    color: var(--white);
     border: 0.5px solid var(--white);
+    background-color: var(--cornflower);
     padding: 7px 25px;
+
+    color: var(--white);
     font-size: 0.875rem;
 }
 .formEl{
